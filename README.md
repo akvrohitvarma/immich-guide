@@ -4,7 +4,8 @@ This guide documents the highly resource-efficient setup of **Immich** (Self-hos
 
 This approach ensures the container's small root disk remains clean while utilizing the superior data integrity and volume management of ZFS for photos and videos.
 
-<img height="360" alt="Untitled Diagram (1)" src="https://github.com/user-attachments/assets/ca21deaa-2477-41fc-9d28-0f070804867e" />
+<img height="360" alt="Untitled Diagram (1)" src="https://github.com/user-attachments/assets/fd711254-1af7-49bc-822a-6299a40586bc" />
+
 
 
 ***

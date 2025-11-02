@@ -91,8 +91,8 @@ The LXC needs to be told to use the ZFS pool, and we must fix the permissions so
     * **Comment out the old line and add the correct paths:**
         ```env
         # IMMICH_MEDIA_LOCATION=/opt/immich/upload    # <-- COMMENT THIS OUT!
-        UPLOAD_LOCATION=/mnt/immich-data/upload      # <-- Immich's upload base directory
-        DB_DATA_LOCATION=/mnt/immich-data/postgres   # <-- Move DB off the LXC disk
+        IMMICH_MEDIA_LOCATION=/mnt/immich-data/upload      # <-- Immich's upload base directory
+        DB_DATA_LOCATION=/mnt/immich-data/postgres   # <-- Move DB off the LXC disk (optional)
         ```
 2.  **Re-Link the Upload Symlinks (Inside LXC):**
     * **LXC Console (App Directory):**

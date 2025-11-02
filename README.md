@@ -4,6 +4,9 @@ This guide documents the highly resource-efficient setup of **Immich** (Self-hos
 
 This approach ensures the container's small root disk remains clean while utilizing the superior data integrity and volume management of ZFS for photos and videos.
 
+<img width="1404" height="1484" alt="Untitled Diagram (1)" src="https://github.com/user-attachments/assets/ca21deaa-2477-41fc-9d28-0f070804867e" />
+
+
 ***
 
 ## 🚀 Part 1: Immich LXC Deployment (Helper Script Method)

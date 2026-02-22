@@ -17,7 +17,7 @@ We start by using the community helper script for a quick and standardized insta
 1.  **Access Proxmox Node Shell:** Go to your Proxmox Web UI and open the **Shell** for your main node.
 2.  **Run the Immich Helper Script:** Copy and paste the command below to launch the automated setup wizard:
     ```bash
-    bash -c "$(wget -qLO - [https://raw.githubusercontent.com/tteck/Proxmox/main/ct/immich.sh](https://raw.githubusercontent.com/tteck/Proxmox/main/ct/immich.sh))"
+    bash -c "$(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/ct/immich.sh)"
     ```
 3.  **Configure Installation:** When prompted, select the **Advanced Setup** and configure the LXC resources:
     * **Container Type:** **Unprivileged** (Crucial for security.)

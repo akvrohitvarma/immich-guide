@@ -62,6 +62,11 @@ The LXC needs to be told to use the ZFS pool, and we must fix the permissions so
         grep immich /etc/passwd
         # Note the two numbers (e.g., 999:991)
         ```
+    * **LXC Console:** Change the ownership of the ZFS path (`/immich`) ⇒ add 100000 to the above UID and GID due to [how proxmox handles LXC user ids](https://blog.kye.dev/proxmox-zfs-mounts#how-it-works)
+        ```bash
+        chown -R 100999:100991 /immich
+        # Use 100000 plus your numbers from above
+        ```
     * **Proxmox Host Shell:** Bind the ZFS path (`/immich`) to a logical mount point inside the container (`/mnt/immich-data`).
         ```bash
         # Replace <LXC ID> with your container ID (e.g., 101)
@@ -112,3 +117,4 @@ The LXC needs to be told to use the ZFS pool, and we must fix the permissions so
 3.  **Reboot:** Reboot the LXC container from the Proxmox UI.
 
 Your Immich installation will now store all new photos and database files on your 3TB ZFS pool.
+
